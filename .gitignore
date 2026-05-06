@@ -1,5 +1,3 @@
-# .gitignore
-
 # Кэш Python
 __pycache__/
 *.pyc

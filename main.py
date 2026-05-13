@@ -130,8 +130,10 @@ class GeometryApp:
             return triangle
         
         elif count == 4:
-        # Прямоугольник (четыре точки)
+            # Четырёхугольник (автоматическая сортировка точек)
             rect = Rectangle(points[0], points[1], points[2], points[3])
+            if rect.is_degenerate():
+                return None
             return rect
         
         return None
